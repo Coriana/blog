@@ -1,7 +1,7 @@
 title: Coriana's Blog
 author: Coriana
 description: A simple blog hosted on GitHub Pages
-baseurl: "" # the subpath of your site, leave empty for local development
+baseurl: "" # empty for user/org GitHub Pages at coriana.github.io
 url: "https://coriana.github.io" 
 markdown: kramdown
 theme: minima  # using minima theme for better defaults
