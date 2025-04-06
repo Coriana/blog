@@ -14,7 +14,7 @@ This is my first blog post! I've set up this Jekyll-based blog to share my thoug
 - Automatically generated navigation
 - Built and hosted with GitHub Pages
 
-Try out some markdown features like [links](https://github.com/Coriana/blog), **bold text**, and even code blocks:
+Try out some markdown features like [links](https://github.com/Coriana/coriana.github.io), **bold text**, and even code blocks:
 
 ```python
 print("Hello, Blog!")
