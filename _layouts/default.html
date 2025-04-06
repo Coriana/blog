@@ -6,8 +6,8 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script>
-    // Check for saved theme preference, otherwise use system preference
-    document.addEventListener('DOMContentLoaded', function() {
+    // Initialize theme as soon as possible to prevent flash of unthemed content
+    (function() {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
@@ -16,10 +16,13 @@
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
       }
-    });
+    })();
 
+    // Toggle function for cycling through themes
     function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      console.log('Current theme: ' + currentTheme);
+      
       let newTheme;
       
       // Cycle through themes: light -> dark -> 90s -> light
