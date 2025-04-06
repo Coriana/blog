@@ -107,6 +107,60 @@ a:hover {
   opacity: 0.8;
 }
 
+/* Post list styles */
+.post-list {
+  margin: 2rem 0;
+}
+
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-preview:last-child {
+  border-bottom: none;
+}
+
+.post-preview h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.post-excerpt {
+  margin-top: 1rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* Post navigation */
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-navigation a {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.post-navigation a:hover {
+  background-color: var(--header-bg);
+  text-decoration: none;
+}
+
+.prev {
+  margin-right: auto;
+}
+
+.next {
+  margin-left: auto;
+}
+
 /* Transitions */
 body, .site-header, .theme-toggle {
   transition: background-color 0.3s ease, color 0.3s ease;
