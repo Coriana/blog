@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Welcome to My First Post"
-date: 2025-04-06 12:00:00 +0000
+date: 2025-04-06 20:00:00 +0000
 ---
 
-This is my first blog post! I've set up this Jekyll-based blog to share my thoughts and experiences. 
+This is my first blog post! I've set up this Jekyll-based blog to share my thoughts and experiences. This was accomplished using ChatGPT and VS Code's new Agent feature. 
 
 ## Features of this blog
 
