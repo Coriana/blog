@@ -1,0 +1,7 @@
+title: Coriana's Blog
+author: Coriana
+description: A simple blog hosted on GitHub Pages
+baseurl: "/blog" # since this is a project page at Coriana/blog
+url: "https://coriana.github.io" 
+markdown: kramdown
+theme: minima  # using minima theme for better defaults
