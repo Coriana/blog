@@ -175,6 +175,70 @@ a:hover {
   border-top: 1px solid var(--border-color);
 }
 
+/* 90s specific post styles */
+[data-theme="90s"] .post {
+  background: #000080;
+  border: 3px outset #c0c0c0;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="90s"] .post-title {
+  color: #ffff00;
+  text-shadow: 2px 2px #ff0000;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+[data-theme="90s"] .post-meta {
+  color: #ff00ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+[data-theme="90s"] .post-content {
+  color: #00ff00;
+}
+
+[data-theme="90s"] .post-navigation {
+  border-top: 2px dashed #00ffff;
+  padding-top: 15px;
+}
+
+[data-theme="90s"] .post-navigation a {
+  background: #000080;
+  border: 2px outset #c0c0c0;
+  color: #00ffff;
+  padding: 5px 10px;
+}
+
+[data-theme="90s"] .post-navigation a:hover {
+  background: #0000cd;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+[data-theme="90s"] .post-content a {
+  color: #ff00ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+[data-theme="90s"] .post-content code {
+  background: #000000;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  padding: 2px 4px;
+}
+
+[data-theme="90s"] pre {
+  background: #000000;
+  border: 2px ridge #00ff00;
+  padding: 10px;
+  overflow-x: auto;
+}
+
 .site-footer {
   text-align: center;
   padding: 2rem 0;
