@@ -16,8 +16,8 @@ title: Home
       </div>
       <div class="post-excerpt">
         {{ post.excerpt }}
-        <a href="{{ post.url }}">Read more &raquo;</a>
       </div>
+      <a href="{{ post.url }}">Read more &raquo;</a>
     </article>
   {% endfor %}
 </div>
