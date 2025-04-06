@@ -184,6 +184,51 @@ a:hover {
   opacity: 0.8;
 }
 
+/* RSS Feed Styling */
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.rss-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+[data-theme="light"] .rss-link {
+  color: #f26522;
+  background-color: rgba(242, 101, 34, 0.1);
+}
+
+[data-theme="light"] .rss-link:hover {
+  background-color: rgba(242, 101, 34, 0.2);
+}
+
+[data-theme="dark"] .rss-link {
+  color: #ff9e66;
+  background-color: rgba(255, 158, 102, 0.1);
+}
+
+[data-theme="dark"] .rss-link:hover {
+  background-color: rgba(255, 158, 102, 0.2);
+}
+
+[data-theme="90s"] .rss-link {
+  color: #ff6600;
+  background-color: #ffcc00;
+  border: 2px solid #ff6600;
+  font-weight: bold;
+}
+
+[data-theme="90s"] .rss-link:hover {
+  background-color: #ff9900;
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
