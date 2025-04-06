@@ -31,8 +31,11 @@
         newTheme = 'light';
       }
       
+      console.log('New theme: ' + newTheme);
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
+      
+      return false; // Prevent default action
     }
   </script>
 </head>
