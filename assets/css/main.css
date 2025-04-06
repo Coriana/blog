@@ -23,7 +23,10 @@ html, body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -32,7 +35,6 @@ body {
 }
 
 .content {
-  flex: 1;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -43,6 +45,7 @@ body {
 .site-header {
   background-color: var(--header-bg);
   padding: 1rem;
+  text-align: center;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -53,14 +56,6 @@ body {
 .site-header a {
   color: var(--text-color);
   text-decoration: none;
-}
-
-.site-header nav {
-  margin-top: 1rem;
-}
-
-site-header nav a {
-  margin-right: 1rem;
 }
 
 a {
@@ -96,17 +91,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-/* Post styles */
-.post-title {
-  color: var(--text-color);
-  margin-top: 0;
-}
-
-.post-meta {
-  color: var(--text-color);
-  opacity: 0.8;
-}
-
 /* Post list styles */
 .post-list {
   margin: 2rem 0;
@@ -128,61 +112,41 @@ a:hover {
 
 .post-excerpt {
   margin-top: 1rem;
-  color: var(--text-color);
-  opacity: 0.9;
 }
 
-/* Post navigation */
+/* Post styles */
+.post {
+  margin: 2rem 0;
+}
+
+.post-title {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+.post-meta {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  margin-bottom: 2rem;
+}
+
 .post-navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
 }
 
-.post-navigation a {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.post-navigation a:hover {
-  background-color: var(--header-bg);
-  text-decoration: none;
-}
-
-.prev {
-  margin-right: auto;
-}
-
-.next {
-  margin-left: auto;
-}
-
-/* Transitions */
-body, .site-header, .theme-toggle {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Add marquee effect for special announcements */
-.announcement {
-  background: #ff0000;
-  color: #ffffff;
-  padding: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* Add "Under Construction" gif styling */
-.under-construction {
+.site-footer {
   text-align: center;
-  margin: 20px 0;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color);
+  opacity: 0.8;
 }
