@@ -14,24 +14,26 @@
       } else {
         // Default to light/dark based on system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : '90s');
       }
     })();
 
     // Toggle function for cycling through themes
     function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || '90s';
       console.log('Current theme: ' + currentTheme);
       
       let newTheme;
       
       // Cycle through themes: light -> dark -> 90s -> light
-      if (currentTheme === 'light') {
+      if (currentTheme === '90s') {
+        newTheme = 'light';
+      } else if (currentTheme === 'light') {
         newTheme = 'dark';
       } else if (currentTheme === 'dark') {
         newTheme = '90s';
       } else {
-        newTheme = 'light';
+        newTheme = '90s'; // Fallback to 90s if current theme is not recognized
       }
       
       console.log('New theme: ' + newTheme);
