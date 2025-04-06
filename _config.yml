@@ -5,4 +5,4 @@ baseurl: "" # empty for user/org GitHub Pages at coriana.github.io
 url: "https://coriana.github.io" 
 markdown: kramdown
 theme: minima  # using minima theme for better defaults
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title.html
