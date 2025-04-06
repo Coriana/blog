@@ -7,3 +7,4 @@ markdown: kramdown
 theme: minima  # using minima theme for better defaults
 permalink: /:year/:month/:day/:title.html
 future: true # Build posts dated in the future
+timezone: Asia/Singapore # Set your timezone (UTC+8)
