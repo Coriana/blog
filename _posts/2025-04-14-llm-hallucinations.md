@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Hallucinations in LLMs: A Side Effect of Being Trained to Be Right"
+title: "Hallucinations in LLMs: A Side Effect of Being Trained to Be Right?"
 date: 2025-04-14 18:00:00 +0800
 ---
-## What if being right is at the cost of being honest?
+## What if being right is at the cost of being honest.
 
 I've been thinking a lot about hallucinations in large language models lately, and I have a theory: they’re not just a quirk of imperfect training data or model size. They might actually be caused by instruction tuning - specifically, by how we train these models to always provide correct answers.
 
