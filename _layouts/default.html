@@ -15,13 +15,13 @@
       } else {
         // Default to light/dark based on system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : '90s');
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'dark');
       }
     })();
 
     // Toggle function for cycling through themes
     function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || '90s';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
       console.log('Current theme: ' + currentTheme);
       
       let newTheme;
