@@ -43,4 +43,4 @@ And that, I think, is where many of our hallucination problems are really coming
 
 
 ---
-Transcribed and cleaned up from audio by AI.
+*Transcribed and cleaned up from audio by AI.*
